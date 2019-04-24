@@ -4,6 +4,7 @@
 		<view>
 			<text class="title">{{title}}</text>
 		</view>
+		<view class="bottomBtn"></view>
 	</view>
 </template>
 
@@ -38,5 +39,16 @@
 	.title {
 		font-size: 36upx;
 		color: #8f8f94;
+	}
+	.bottomBtn{
+		width: 100upx;
+		height: 100upx;
+		position: fixed;
+		bottom: 50upx;
+		left: 50%;
+		background: green;
+		transform: translateX(-50%);
+		border-radius: 50%;
+		z-index: 1000000;
 	}
 </style>
